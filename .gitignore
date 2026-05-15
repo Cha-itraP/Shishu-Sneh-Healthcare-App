@@ -1,0 +1,24 @@
+# Project exclude paths
+/.gradle/
+/app/build/
+/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/
+/build/
+
+# Android
+*.iml
+.gradle
+/local.properties
+/.idea
+/build
+/captures
+.externalNativeBuild
+
+# Logs
+*.log
+
+# Memory dumps
+*.hprof
+
+# OS files
+.DS_Store
+Thumbs.db
