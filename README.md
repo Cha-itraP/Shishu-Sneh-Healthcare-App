@@ -1,102 +1,109 @@
 🍼 Shishu-Sneh — Baby Healthcare Companion
 
-An AI-powered Android application designed to support new mothers in tracking their baby’s first-year health, growth, and development.
+📱 Android App | Kotlin | Room DB | MVVM | MPAndroidChart
+
+An AI-powered Android application to support new mothers in tracking baby health, growth, and development.
 
 📌 Problem Statement
 
-New mothers, especially in rural and underserved areas, often lack access to reliable healthcare guidance for their baby’s early development. Important aspects like growth monitoring, vaccination schedules, and feeding practices are frequently missed due to lack of awareness or tracking tools.
+New mothers often struggle to track their baby’s health, vaccination schedules, and development milestones—especially in rural areas with limited access to healthcare guidance.
 
-Shishu-Sneh aims to solve this problem by providing a simple, accessible, and intelligent digital companion that ensures better baby care through technology.
+Shishu-Sneh provides a simple, intelligent solution to ensure proper baby care through tracking, reminders, and AI-based guidance.
 
 ✨ Features
-📊 Real-time Growth Monitoring
-Track baby’s height and weight
-Visual charts using MPAndroidChart
-Monthly growth analysis
-💉 Vaccination Management
-Automated reminders based on baby’s DOB
-Information about diseases and prevention
-Ensures no missed vaccinations
-🥗 Personalized Feeding Guidance
-Daily nutrition tips for baby and mother
-Easy-to-understand recommendations
-✅ Development Milestone Tracking
-Track developmental activities
-Simple Yes/No input system
-Example: “Can the baby hold their head up?”
-🔔 Smart Notifications
-Automated reminders using WorkManager
-Background alerts without manual tracking
-🧠 AI-assisted Insights
-Smart suggestions based on user data
-Helps mothers make informed decisions
+📊 Real-time growth tracking (Height & Weight)
+💉 Smart vaccination reminders
+🥗 Personalized feeding guidance
+✅ Milestone tracking (Yes/No system)
+🔔 Automated notifications (WorkManager)
+🧠 AI-assisted insights
+
 🛠️ Tech Stack
 Category	Technology Used
-Language	Java / Kotlin
+Language	Kotlin / Java
 Platform	Android
 Architecture	MVVM
-Database	Room Database (Room DB)
+Database	Room DB
 Charts	MPAndroidChart
 Background Jobs	WorkManager
-⚙️ Installation Steps
 
-Clone the repository:
+🚀 Steps to Run in Android Studio
 
-git clone https://github.com/your-username/shishu-sneh.git
-Open the project in Android Studio
-Sync Gradle:
-Click "Sync Project with Gradle Files"
-Connect an emulator or Android device
-▶️ Run the App
+Prerequisites
+Android Studio Hedgehog or newer
+JDK 17
+Android SDK installed
+Emulator or physical device
 
-Click the Run ▶️ button in Android Studio
-or use:
+Step 1: Open Project
+Open Android Studio
+Click File → Open
+Select project folder
+Click OK
+Wait for Gradle sync
 
+Step 2: Add JitPack Repository (for MPAndroidChart)
+
+In settings.gradle:
+
+dependencyResolutionManagement {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+Step 3: Sync Gradle
+Click Sync Project with Gradle Files
+Wait for BUILD SUCCESSFUL
+
+Step 4: Run App
+Select emulator/device
+Click ▶️ Run button
+Or press:
 Shift + F10
-📸 Screenshots
-
-Add your app screenshots here
-
-Example:
-
-Home Screen
-Growth Chart
-Vaccination Reminder
-Feeding Guidance
-
-🎥 Demo Link
-
-Add your demo video link here (Google Drive / YouTube)
 
 📂 Project Structure
 Shishu-Sneh/
 │── app/
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/com/example/shishusneh/
-│   │   │   │   ├── ui/              # Activities & Fragments
-│   │   │   │   ├── viewmodel/      # MVVM ViewModels
-│   │   │   │   ├── repository/     # Data handling
-│   │   │   │   ├── database/       # Room DB
-│   │   │   │   ├── model/          # Data models
-│   │   │   │   └── utils/          # Helper classes
-│   │   │   ├── res/                # Layouts, drawables, values
-│   │   │   └── AndroidManifest.xml
+│   ├── src/main/
+│   │   ├── java/com/example/shishusneh/
+│   │   │   ├── ui/              # Activities & Fragments
+│   │   │   ├── viewmodel/      # MVVM ViewModels
+│   │   │   ├── repository/     # Data handling
+│   │   │   ├── database/       # Room DB
+│   │   │   ├── model/          # Data models
+│   │   │   └── utils/          # Helper classes
+│   │   ├── res/                # Layouts, drawables, values
+│   │   └── AndroidManifest.xml
 │── build.gradle
 │── settings.gradle
 │── README.md
 
-✔ Clear separation of concerns (UI, ViewModel, Repository, Database)
-✔ Organized assets and resources
-✔ Configuration files included (Gradle)
+📊 Architecture
+UI Layer (Fragments / Activities)
+        ↓
+ViewModel (LiveData)
+        ↓
+Repository
+        ↓
+Room Database (SQLite)
+
+📸 Screenshots
+
+Add your app screenshots here
+
+🎥 Demo Link
+
+Add your demo video link (YouTube / Drive)
 
 🔮 Future Improvements
-🌐 Multi-language support (for rural accessibility)
-☁️ Cloud sync & backup
-🤖 Advanced AI chatbot for real-time guidance
-📍 Integration with nearby healthcare centers
-📊 More detailed analytics & reports
+🌐 Multi-language support
+☁️ Cloud backup & sync
+🤖 AI chatbot integration
+📍 Nearby healthcare integration
+📊 Advanced analytics
 
 📎 Conclusion
-
-Shishu-Sneh is a step towards leveraging technology to improve early childhood healthcare. By combining simplicity, accessibility, and AI-driven insights, the app empowers mothers to provide better care for their babies.
+Shishu-Sneh improves early childhood healthcare by combining accessibility, tracking, and AI-driven insights, helping mothers provide better care for their babies.
