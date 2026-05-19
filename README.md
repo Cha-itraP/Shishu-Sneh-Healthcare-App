@@ -263,6 +263,4 @@ Data Layer (Room DB → SQLite + DataStore)
 
 ---
 
-## 📄 License
 
-This project is submitted as an academic assignment. All rights reserved by the author.
